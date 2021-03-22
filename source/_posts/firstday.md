@@ -20,10 +20,10 @@ $ npm install hexo-server --save
 $ npm install hexo-deployer-git --save
 - 참고로, 복사+붙여넣기 하면 오류를 줄일 수 있음
 
-##Local server로 테스트
+## Local server로 테스트
 $ hexo server
 
-##Pycharm
+## Pycharm
 1) pycharm을 열어서 myblog 폴더를 연다.
 2) config.yml 파일을 열어 title, author을 수정한다.
 title: Eunjin's Blog
@@ -36,7 +36,7 @@ deploy:
   repo: https://github.com/user_name/user_name.github.io.git
   branch: main
    
-##Hexo generate & deploy
+## Hexo generate & deploy
 - 활성화시킨 뒤 배포한다. 
 $ hexo generate 
 $ hexo deploy
@@ -47,12 +47,16 @@ $ hexo deploy --generate
 ex) icarus 설치
 1) icarus 설치
 $ npm install hexo-theme-icarus
+   
 2) config.yml의 Extensions의 theme을 icarus로 변경
 theme: icarus
+   
 3) $ hexo server
-이때, Error에서 뜨는 설명대로 그대로 복사한 뒤 붙여넣기하여 설치하기 
+이때, Error에서 뜨는 설명대로 그대로 복사한 뒤 붙여넣기하여 설치하기
 $ npm install --save bulma-stylus@0.8.0 hexo-renderer-inferno@^0.1.3
+
 4) 다시 local server 테스트
 $ hexo server
 $ hexo deploy --generate
 
+![](Images/blog_image.png)<!-- -->
