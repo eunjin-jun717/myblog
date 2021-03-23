@@ -3,7 +3,7 @@ title: R_edu1
 date: 2021-03-23 22:06:56
 tags: r
 ---
-![](images/sample.png)
+![](Images/sample.png)
 
 # R 코딩 기초
 ## 실행방법
@@ -70,5 +70,5 @@ factor_height_vector <- factor(factor_height_vector,
 factor_height_vector
 ```
 
-###참조
+### 참조
 - [https://github.com/dschloe/R_edu](https://github.com/dschloe/R_edu)

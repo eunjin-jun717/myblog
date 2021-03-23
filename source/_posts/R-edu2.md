@@ -3,7 +3,7 @@ title: R-edu2
 date: 2021-03-23 22:53:23
 tags: r
 ---
-![](images/sample2.png)
+![](Images/sample2.png)
 ## counties visualization practice
 ### 파일 불러오기
 ```r
@@ -65,5 +65,5 @@ counties_selected %>%
 ```
 state가 California이거나 population이 100000명 이상인 것을 추출한다. 
 
-###참조
+### 참조
 - [https://github.com/dschloe/R_edu](https://github.com/dschloe/R_edu)

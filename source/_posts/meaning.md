@@ -4,7 +4,7 @@ date: 2021-03-23 21:40:58
 tags: github
 ---
 # Main 과 Branch
-![main_branch](./images/main_branch.png)
+![main_branch](Images/main_branch.png)
 - 그림에서 보이는 main과 branch의 역할이 무엇인지 궁금하여 찾아보았다. 
 ## Branch란? 
 - 여러 개발자들이 동시에 다양한 작업을 할 수 있게 만들어 주는 기능
