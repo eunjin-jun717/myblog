@@ -21,10 +21,18 @@ data("iris")
 ```r
 str(iris)
 ```  
+
 - step5) 가공되지 않은 Raw data 가공하기
+  
 - step6) 시각화하기
 ```r
-ggplot(data = iris, mapping = aes(x = Petal.Length, y = Petal.Width))
+ggplot(data=iris, 
+       mapping = aes(x = Petal.Length, 
+                     y = Petal.Width,
+                     colour = Species)) +
+  geom_point(size=3)
 ```
 *tap 누르면 자동입력기능 있음.
 *help에서 ggplot sample 확인 가능.
+
+![](Images/iris_data.png)<!-- -->
