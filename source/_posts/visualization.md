@@ -13,10 +13,12 @@ install.packages("ggplot2")
 ```r
 library(ggplot2)
 ```
+
 - step3) 데이터 불러오기
 ```r
 data("iris")
 ```
+
 - step4) 데이터 확인하기
 ```r
 str(iris)
