@@ -13,19 +13,15 @@ install.packages("ggplot2")
 ```r
 library(ggplot2)
 ```
-
 - step3) 데이터 불러오기
 ```r
 data("iris")
 ```
-
 - step4) 데이터 확인하기
 ```r
 str(iris)
-```  
-
+```
 - step5) 가공되지 않은 Raw data 가공하기
-  
 - step6) 시각화하기
 ```r
 ggplot(data=iris, 
