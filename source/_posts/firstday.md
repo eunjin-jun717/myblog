@@ -1,7 +1,7 @@
 ---
 title: How to create a blog with Hexo
 date: 2021-03-22 21:38:36
-tags: blog github hexo
+tags: hexo
 ---
 ## github에 2개의 Repository 생성
 - 포스트 버전관리: user_name 
