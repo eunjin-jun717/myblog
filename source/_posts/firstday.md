@@ -60,3 +60,6 @@ $ hexo server
 $ hexo deploy --generate
 
 ![](Images/blog_image.png)
+
+### 참조
+- [https://dschloe.github.io/settings/hexo_blog/](https://dschloe.github.io/settings/hexo_blog/)
