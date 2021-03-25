@@ -12,13 +12,14 @@ tags: r
 
 ## 변수 저장 시 
 ```r
-<- 
+a <- 3
 ```
 Alt + - key 누르면 된다. 
 
 ## 변수 호출 시 
 ```r
-print(x) #혹은
+print(x) 
+#혹은
 x 
 ```
 
@@ -32,9 +33,10 @@ my_numeric <- 17
 ```r 
 my_character <- "eunjin"
 ```
-- 숫자형 변수 
+- 논리형 변수 
 ```r 
 my_logical <- FALSE 
+my_logical <- TRUE 
 ```
 ## 벡터 생성
 ```r 
@@ -45,10 +47,11 @@ number_vertor <- c(1,"2",3)
 - 두번째 라인은 숫자, 문자가 섞여져 있다.
 이때 컴퓨터는 문자형 -> 숫자형 -> 논리형 으로 저장된다. 
 따라서 두번째 라인의 변수 type은 문자형이 나온다. => "character"
-- 변수 type을 알아볼때는 class()를 사용한다.
+
 ```r 
 class(number_vector)
 ```
+- 변수 type을 알아볼때는 class()를 사용한다.
 
 ## 범주형 변수의 순서
 - Levels: 낮음 높음
