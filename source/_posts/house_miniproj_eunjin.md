@@ -98,7 +98,7 @@ ggplot(data = all[!is.na(all$SalePrice),], #SalePrice에 결측값인 NA가 포�
                      labels= comma) # 숫자 3자리마다 ',' 넣음
 ```
 
-![](house_miniproj_eunjin_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![](Images/mini_proj/unnamed-chunk-6-1.png)<!-- -->
 - 히스토그램을 보면 좌측으로 치우쳐져 있다.
 이 말은 SalePrice가 낮은 집이 잘 팔린다는 뜻이고, SalePrice가 높은 집은 사는 사람이 거의 없다는 것을 의미한다. 
 
@@ -147,7 +147,7 @@ cor_numVar <- cor_numVar[CorHigh, CorHigh] # 0.5이상의 상관관계를 가진
 corrplot.mixed(cor_numVar, tl.col= "black", tl.pos="lt") #tl: text legend, cl: color legend
 ```
 
-![](house_miniproj_eunjin_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+![](Images/mini_proj/unnamed-chunk-8-1.png)<!-- -->
 
 - 상관관계가 0.5이상인 데이터들을 봤을 때, SalePrice와 가장 높은 상관관계를 가지는 것은 "OverallQual"인 전반적인 품질이었다. => 0.791
 
