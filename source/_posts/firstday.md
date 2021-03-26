@@ -59,7 +59,7 @@ $ npm install --save bulma-stylus@0.8.0 hexo-renderer-inferno@^0.1.3
 $ hexo server
 $ hexo deploy --generate
 
-![](Images/blog_image.png)
+![](images/blog_image.png)
 
 ### 참조
 - [https://dschloe.github.io/settings/hexo_blog/](https://dschloe.github.io/settings/hexo_blog/)

@@ -13,7 +13,7 @@ output:
 - X: 배열, 매트릭스
 - Margin: 행(1), 열(2)
 - Fun: 함수
-![apply()](Images/for_apply/apply.png)
+![apply()](images/for_apply/apply.png)
 
 
 ```r
@@ -62,7 +62,7 @@ apply(my.matrx, 2, function(x) length(x)) # 직접 함수를 정의해서 사용
 ## lapply 함수
 - lapply(X,FUN, ...)
 - X: 벡터, 리스트
-![lapply()](Images/for_apply/lapply.png)
+![lapply()](images/for_apply/lapply.png)
 
 ```r
 vec <- c(1:10)

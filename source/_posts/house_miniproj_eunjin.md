@@ -98,7 +98,7 @@ ggplot(data = all[!is.na(all$SalePrice),], #SalePrice에 결측값인 NA가 포�
                      labels= comma) # 숫자 3자리마다 ',' 넣음
 ```
 
-![](Images/mini_proj/unnamed-chunk-6-1.png)<!-- -->
+![](images/mini_proj/unnamed-chunk-6-1.png)<!-- -->
 - 히스토그램을 보면 좌측으로 치우쳐져 있다.
 이 말은 SalePrice가 낮은 집이 잘 팔린다는 뜻이고, SalePrice가 높은 집은 사는 사람이 거의 없다는 것을 의미한다. 
 

@@ -3,7 +3,7 @@ title: R코딩 기초함수
 date: 2021-03-23 22:53:23
 tags: r
 ---
-![](Images/sample2.png)
+![](images/sample2.png)
 ## Visualization Practice using "counties"
 ### 파일 불러오기
 - get working directory 라는 뜻으로 현재 위치를 알려준다.

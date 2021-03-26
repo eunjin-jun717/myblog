@@ -33,7 +33,7 @@ ggplot(data=iris,
 *tap 누르면 자동입력기능 있음.
 *help에서 ggplot sample 확인 가능.
 
-![](Images/iris_data.png)
+![](images/iris_data.png)
 
 ### 참조
 - [https://github.com/dschloe/R_edu](https://github.com/dschloe/R_edu)
