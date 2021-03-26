@@ -3,7 +3,7 @@ title: R코딩 기초1
 date: 2021-03-23 22:06:56
 tags: r
 ---
-![](hueman_images/sample.png)
+![](/hueman_images/sample.png)
 
 # R 코딩 기초
 ## 실행방법
