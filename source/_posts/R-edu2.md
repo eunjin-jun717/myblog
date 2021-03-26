@@ -1,5 +1,5 @@
 ---
-title: R-edu2
+title: R코딩 기초함수
 date: 2021-03-23 22:53:23
 tags: r
 ---

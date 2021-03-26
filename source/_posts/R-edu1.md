@@ -1,5 +1,5 @@
 ---
-title: R_edu1
+title: R코딩 기초1
 date: 2021-03-23 22:06:56
 tags: r
 ---
