@@ -40,6 +40,6 @@ summary(cars)
 
 You can also embed plots, for example:
 
-![](images/markdown_image.png)<!-- -->
+![](hueman_images/markdown_image.png)<!-- -->
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
