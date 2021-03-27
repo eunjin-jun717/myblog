@@ -481,24 +481,6 @@ library(nycflights13)
 ## apply 함수사용 시 속도
 
 ```r
-install.packages('nycflights13', repos="http://cran.us.r-project.org")
-```
-
-```
-## Warning: package 'nycflights13' is in use and will not be installed
-```
-
-```r
-install.packages('dplyr', repos="http://cran.us.r-project.org")
-```
-
-```
-## Warning: package 'dplyr' is in use and will not be installed
-```
-
-```r
-library(dplyr)
-library(nycflights13)
 head(flights)
 ```
 
