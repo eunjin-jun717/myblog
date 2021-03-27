@@ -13,7 +13,7 @@ output:
 - X: 배열, 매트릭스
 - Margin: 행(1), 열(2)
 - Fun: 함수
-
+![apply()](/hueman_images/for_apply/apply.png)
 
 ```r
 my.matrx <- matrix(c(1:10, 11:20, 21:30), nrow = 10, ncol=3) # 행이  10개, 열이 3개인 매트릭스 생성
@@ -62,7 +62,7 @@ apply(my.matrx, 2, function(x) length(x)) # 직접 함수를 정의해서 사용
 - lapply(X,FUN, ...)
 - X: 벡터, 리스트
 - 반환값: 리스트
-
+![lapply()](/hueman_images/for_apply/lapply.png)
 ```r
 vec <- c(1:10)
 vec
