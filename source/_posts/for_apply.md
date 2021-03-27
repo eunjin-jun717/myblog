@@ -13,7 +13,6 @@ output:
 - X: 배열, 매트릭스
 - Margin: 행(1), 열(2)
 - Fun: 함수
-![apply()](/hueman_images/for_apply/apply.png)
 
 
 ```r
@@ -62,7 +61,7 @@ apply(my.matrx, 2, function(x) length(x)) # 직접 함수를 정의해서 사용
 ## lapply 함수
 - lapply(X,FUN, ...)
 - X: 벡터, 리스트
-![lapply()](/hueman_images/for_apply/lapply.png)
+- 반환값: 리스트
 
 ```r
 vec <- c(1:10)
@@ -114,7 +113,21 @@ A <- c(1:9)
 B <- c(1:12)
 C <- c(1:15)
 my.lst <- list(A,B,C)
+my.lst
+```
 
+```
+## [[1]]
+## [1] 1 2 3 4 5 6 7 8 9
+## 
+## [[2]]
+##  [1]  1  2  3  4  5  6  7  8  9 10 11 12
+## 
+## [[3]]
+##  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+```
+
+```r
 lapply(my.lst, sum) # 각 list 안의 값들의 합
 ```
 
@@ -135,6 +148,14 @@ lapply(my.lst, sum) # 각 list 안의 값들의 합
 - lapply와 같은 동작을 하지만, 가능하면 출력을 단순화 시키는 함수
 - simplify=TRUE : 출력을 단순화시킴, simplify=FALSE : 단순화 시키지 않음
 - USE.NAMES=TRUE : 이름 속성도 반환, USE.NAMES=FALSE : 이름 속성 없이 반환
+
+```r
+vec
+```
+
+```
+##  [1]  1  2  3  4  5  6  7  8  9 10
+```
 
 ```r
 sapply(vec, sum, simplify=FALSE) # 출력을 단순화 하지 않으므로 리스트 형태로 출력
@@ -173,7 +194,7 @@ sapply(vec, sum, simplify=FALSE) # 출력을 단순화 하지 않으므로 리�
 ```
 
 ```r
-sapply(vec, sum) # 출력을 단순화시킴 
+sapply(vec, sum, simplify=TRUE) # 출력을 단순화시킴 
 ```
 
 ```
@@ -181,21 +202,52 @@ sapply(vec, sum) # 출력을 단순화시킴
 ```
 
 ```r
-sapply(my.lst, sum) # 벡터를 반환
+my.lst
+```
+
+```
+## [[1]]
+## [1] 1 2 3 4 5 6 7 8 9
+## 
+## [[2]]
+##  [1]  1  2  3  4  5  6  7  8  9 10 11 12
+## 
+## [[3]]
+##  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+```
+
+```r
+sapply(my.lst, sum) # 출력을 단순화시킴 # simplify=TRUE 생략된 모습
 ```
 
 ```
 ## [1]  45  78 120
+```
+
+```r
+lapply(my.lst, sum) # 리스트를 반환
+```
+
+```
+## [[1]]
+## [1] 45
+## 
+## [[2]]
+## [1] 78
+## 
+## [[3]]
+## [1] 120
 ```
 
 ## vapply 함수
 - vapply(X,FUN,FUN.VALUE,...,USE.NAMES=TRUE)
-- value로 예상되는 데이터 유형을 지정해야함
+- sapply함수와 비슷함.
+- 차이점: value로 예상되는 데이터 유형을 지정해야함
 - FUN.VALUE: 자료형 지정
 
 
 ```r
-vapply(vec, sum, numeric(1)) # 1개의 숫자데이터만 들어감
+vec
 ```
 
 ```
@@ -203,7 +255,30 @@ vapply(vec, sum, numeric(1)) # 1개의 숫자데이터만 들어감
 ```
 
 ```r
-vapply(my.lst, sum, numeric(1))
+vapply(vec, sum, numeric(1)) # 1개의 숫자데이터로 나오게함
+```
+
+```
+##  [1]  1  2  3  4  5  6  7  8  9 10
+```
+
+```r
+my.lst
+```
+
+```
+## [[1]]
+## [1] 1 2 3 4 5 6 7 8 9
+## 
+## [[2]]
+##  [1]  1  2  3  4  5  6  7  8  9 10 11 12
+## 
+## [[3]]
+##  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
+```
+
+```r
+vapply(my.lst, sum, numeric(1)) # 1개의 숫자데이터로 나오게함
 ```
 
 ```
@@ -211,7 +286,7 @@ vapply(my.lst, sum, numeric(1))
 ```
 
 ```r
-#vapply(my.lst, function(x) x, numeric(1)) 
+#vapply(my.lst, function(x) x, numeric(1)) # error 뜸
 #1개의 데이터만 들어갈 수 있는데 함수의 결과는 9개가 나오므로 error뜸
 ```
 
@@ -222,6 +297,24 @@ vapply(my.lst, sum, numeric(1))
 
 ```r
 tdata <- as.data.frame(cbind(c(1,1,1,1,1,2,2,2,2,2), my.matrx)) # 열단위로 결합시킴
+tdata
+```
+
+```
+##    V1 V2 V3 V4
+## 1   1  1 11 21
+## 2   1  2 12 22
+## 3   1  3 13 23
+## 4   1  4 14 24
+## 5   1  5 15 25
+## 6   2  6 16 26
+## 7   2  7 17 27
+## 8   2  8 18 28
+## 9   2  9 19 29
+## 10  2 10 20 30
+```
+
+```r
 colnames(tdata) # tdata의 열 이름
 ```
 
@@ -230,7 +323,7 @@ colnames(tdata) # tdata의 열 이름
 ```
 
 ```r
-tapply(tdata$V2, tdata$V1, sum) # V1: index 
+tapply(tdata$V2, tdata$V1, sum) # V1: index이며, V2가 함수의 인자로 전달됨 
 ```
 
 ```
@@ -284,12 +377,40 @@ mapply(rep, 1:10, 10:1) # 반복함수, 반복할 숫자, 반복되는 갯수
 ```
 
 ```r
-tdata$V5 <- mapply(function(x,y) x*y, tdata$V1, tdata$V2)
-tdata$V5
+tdata
 ```
 
 ```
-##  [1]  1  2  3  4  5 12 14 16 18 20
+##    V1 V2 V3 V4
+## 1   1  1 11 21
+## 2   1  2 12 22
+## 3   1  3 13 23
+## 4   1  4 14 24
+## 5   1  5 15 25
+## 6   2  6 16 26
+## 7   2  7 17 27
+## 8   2  8 18 28
+## 9   2  9 19 29
+## 10  2 10 20 30
+```
+
+```r
+tdata$V5 <- mapply(function(x,y) x*y, tdata$V1, tdata$V2) # V1과 V2의 값들에 대한 곱
+tdata
+```
+
+```
+##    V1 V2 V3 V4 V5
+## 1   1  1 11 21  1
+## 2   1  2 12 22  2
+## 3   1  3 13 23  3
+## 4   1  4 14 24  4
+## 5   1  5 15 25  5
+## 6   2  6 16 26 12
+## 7   2  7 17 27 14
+## 8   2  8 18 28 16
+## 9   2  9 19 29 18
+## 10  2 10 20 30 20
 ```
 
 # For문, apply함수 속도 비교(1)
@@ -298,7 +419,7 @@ tdata$V5
 ```r
 # 랜덤한 10000개의 숫자를 x1, x2에 저장
 N <- 10000
-x1 <- runif(N)
+x1 <- runif(N) # runif() : 랜덤숫자 발생함수
 x2 <- runif(N)
 
 # x1과 x2를 열단위로 묶어서 d에 data frame 형태로 저장
@@ -312,7 +433,7 @@ system.time(for(i in c(1:length(d[,1]))){ # 1부터 'd의 1열 길이'만큼 for
 
 ```
 ##    user  system elapsed 
-##    0.47    0.00    0.47
+##    0.80    0.05    0.84
 ```
 - For문은 1부터 10000까지 한 명이 순차적으로 일을 처리한다.
 
@@ -325,7 +446,7 @@ system.time(d$mean1 <- apply(d, 1, mean)) # d의 행에 대한 평균
 
 ```
 ##    user  system elapsed 
-##    0.05    0.00    0.04
+##    0.06    0.00    0.06
 ```
 
 # For문, apply함수 속도 비교(2)
@@ -338,7 +459,7 @@ install.packages('nycflights13', repos="http://cran.us.r-project.org")
 ## package 'nycflights13' successfully unpacked and MD5 sums checked
 ## 
 ## The downloaded binary packages are in
-## 	C:\Users\Public\Documents\ESTsoft\CreatorTemp\RtmpkTLbHQ\downloaded_packages
+## 	C:\Users\study\AppData\Local\Temp\Rtmp08X2ug\downloaded_packages
 ```
 
 ```r
@@ -349,7 +470,7 @@ install.packages('dplyr', repos="http://cran.us.r-project.org")
 ## package 'dplyr' successfully unpacked and MD5 sums checked
 ## 
 ## The downloaded binary packages are in
-## 	C:\Users\Public\Documents\ESTsoft\CreatorTemp\RtmpkTLbHQ\downloaded_packages
+## 	C:\Users\study\AppData\Local\Temp\Rtmp08X2ug\downloaded_packages
 ```
 
 ```r
@@ -358,7 +479,26 @@ library(nycflights13)
 ```
 
 ## apply 함수사용 시 속도
+
 ```r
+install.packages('nycflights13', repos="http://cran.us.r-project.org")
+```
+
+```
+## Warning: package 'nycflights13' is in use and will not be installed
+```
+
+```r
+install.packages('dplyr', repos="http://cran.us.r-project.org")
+```
+
+```
+## Warning: package 'dplyr' is in use and will not be installed
+```
+
+```r
+library(dplyr)
+library(nycflights13)
 head(flights)
 ```
 
@@ -393,7 +533,7 @@ system.time(df$mean3 <- apply(df, 1, mean))
 
 ```
 ##    user  system elapsed 
-##    0.02    0.00    0.02
+##    0.03    0.00    0.03
 ```
 
 ```r
@@ -405,7 +545,7 @@ system.time(for(i in c(1:length(data_flight))){
 
 ```
 ##    user  system elapsed 
-##    0.14    0.00    0.14
+##    0.28    0.02    0.29
 ```
 
 # apply함수 사용 시 장점
@@ -414,7 +554,6 @@ system.time(for(i in c(1:length(data_flight))){
 
 ## 참조
 - 1. [https://ademos.people.uic.edu/Chapter4.html#:~:text=Apply%20functions%20are%20a%20family,and%20often%20require%20less%20code.](https://ademos.people.uic.edu/Chapter4.html#:~:text=Apply%20functions%20are%20a%20family,and%20often%20require%20less%20code.)
-- 2. [http://rstudio-pubs-static.s3.amazonaws.com/5526_83e42f97a07141e88b75f642dbae8b1b.html](http://rstudio-pubs-static.s3.amazonaws.com/5526_83e42f97a07141e88b75f642dbae8b1b.html)
-- 3.[그림](https://www.datacamp.com/community/tutorials/r-tutorial-apply-family)
+-2. [http://rstudio-pubs-static.s3.amazonaws.com/5526_83e42f97a07141e88b75f642dbae8b1b.html](http://rstudio-pubs-static.s3.amazonaws.com/5526_83e42f97a07141e88b75f642dbae8b1b.html)
 
 
