@@ -1,7 +1,7 @@
 ---
 title: troubleshooting in Hexo
 date: 2021-03-29 21:23:23
-tags:
+tags: hexo
 ---
 ## 오류 상황
 : npm을 통해서 설치를 완료하였는데도 아래와 같은 오류가 발생하였다. 
