@@ -18,19 +18,15 @@ tuple은 *immutable* 즉, 생성된 후에 변경이 **불가능**하다.
 
 
 ```python
-list_1=['A','B','C','D']
-tuple_1='A','B','C','D'
-
+list_1 = ['A','B','C','D']
+tuple_1 = 'A','B','C','D'
 import sys
-sys.getsizeof(list_1)
-sys.getsizeof(tuple_1)
+print(sys.getsizeof(list_1))
+print(sys.getsizeof(tuple_1))
 ```
 
-    10000000 loops, best of 5: 52.8 ns per loop
-    100000000 loops, best of 5: 16 ns per loop
-    The slowest run took 21.06 times longer than the fastest. This could mean that an intermediate result is being cached.
-    10000000 loops, best of 5: 47.8 ns per loop
-    10000000 loops, best of 5: 42.3 ns per loop
+    104
+    88
     
 
 - tuple이 메모리를 차이하는 것이 더 작은 것을 볼 수 있다. 
@@ -42,6 +38,10 @@ sys.getsizeof(tuple_1)
 %timeit list_2=['a','b','c','d']
 %timeit tuple_2='a','b','c','d'
 ```
+
+    10000000 loops, best of 5: 57.5 ns per loop
+    100000000 loops, best of 5: 16.4 ns per loop
+    
 
 - tuple의 생성속도가 더 빠른 것을 확인할 수 있다.
 
@@ -55,6 +55,10 @@ list_3=['A','B','C','D']
 tuple_3='A','B','C','D'
 %timeit tuple_3[0]
 ```
+
+    10000000 loops, best of 5: 43 ns per loop
+    10000000 loops, best of 5: 42.8 ns per loop
+    
 
 tuple이 list보다 indexing 으로 데이터에 접근하는 속도가 더 빠르다. 
 
