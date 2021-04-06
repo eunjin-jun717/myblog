@@ -1,4 +1,8 @@
-# List vs Tuple
+---
+date: 2021-04-06
+tags: python
+---
+# List vs Tuple in python
 
 ## 차이점
 1) list는 *mutable* 즉, 생성된 후에 변경 **가능**하다.\
