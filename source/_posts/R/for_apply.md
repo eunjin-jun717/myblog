@@ -3,6 +3,8 @@ title: "apply함수와 for문의 속도 비교"
 output: 
   html_document:
     keep_md: yes
+date: 2021-03-28
+tags: r
 
 ---
 

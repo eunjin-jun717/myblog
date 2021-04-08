@@ -1,3 +1,7 @@
+---
+date: 2021-04-07
+tags: python
+---
 # 블로그 실습 따라하기
 - [Spines&Grids practice](https://jehyunlee.github.io/2020/08/27/Python-DS-28-mpl_spines_grids/)
 

@@ -1,7 +1,7 @@
 ---
 title: visualization
 date: 2021-03-22 22:09:02
-tags:
+tags: r
 ---
 
 ## 간단하게 시각화 하는 과정

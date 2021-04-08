@@ -1,3 +1,7 @@
+---
+date: 2021-04-08
+tags: python
+---
 # [Python] Series & Dataframe
 - Pandas의 데이터 구조\
 : Series, Dataframe, Panel 3가지가 있다.
