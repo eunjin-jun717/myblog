@@ -1,4 +1,5 @@
 ---
+title: "[Python] List vs Tuple"
 date: 2021-04-06
 tags: python
 ---

@@ -1,4 +1,5 @@
 ---
+title: "[Python]시각화 코드 실습"
 date: 2021-04-07
 tags: python
 ---

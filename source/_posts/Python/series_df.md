@@ -1,4 +1,5 @@
 ---
+title: "[Python] Series & Dataframe"
 date: 2021-04-08
 tags: python
 ---

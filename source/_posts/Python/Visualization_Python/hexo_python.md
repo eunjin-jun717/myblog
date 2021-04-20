@@ -1,4 +1,5 @@
 ---
+title: "[Python]시각화 블로그 연습"
 date: 2021-04-06
 tags: python
 ---

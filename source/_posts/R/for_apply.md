@@ -1,5 +1,5 @@
 ---
-title: "apply함수와 for문의 속도 비교"
+title: "[R] apply함수와 for문의 속도 비교"
 output: 
   html_document:
     keep_md: yes

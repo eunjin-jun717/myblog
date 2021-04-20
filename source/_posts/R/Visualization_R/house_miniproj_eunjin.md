@@ -1,5 +1,5 @@
 ---
-title: "주택 가격: 시각화 예제"
+title: "[R] 주택 가격: 시각화 예제"
 author: "Eunjin"
 output:
   html_document:

@@ -1,5 +1,5 @@
 ---
-title: 기초 통계-상관분석
+title: "[Statistic]기초 통계-상관분석"
 date: 2021-04-05 15:08:52
 tags: statistic
 ---
