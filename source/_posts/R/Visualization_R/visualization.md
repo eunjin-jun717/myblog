@@ -1,5 +1,5 @@
 ---
-title: visualization
+title: "[R]Simple visualization"
 date: 2021-03-22 22:09:02
 tags: r
 ---

@@ -1,5 +1,5 @@
 ---
-title: How to create a blog with Hexo
+title: "[Hexo]How to create a blog with Hexo"
 date: 2021-03-22 21:38:36
 tags: hexo
 ---

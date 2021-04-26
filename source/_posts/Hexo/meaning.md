@@ -1,5 +1,5 @@
 ---
-title: What is the main and branch in Github
+title: "[Hexo] What is the main and branch in Github"
 date: 2021-03-23 21:40:58
 tags: github
 ---

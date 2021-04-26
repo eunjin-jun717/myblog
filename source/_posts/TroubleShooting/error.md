@@ -1,5 +1,5 @@
 ---
-title: troubleshooting in Hexo
+title: "[Hexo] troubleshooting in Hexo"
 date: 2021-03-29 21:23:23
 tags: hexo
 ---

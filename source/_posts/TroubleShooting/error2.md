@@ -1,5 +1,5 @@
 ---
-title: Encoding error in R
+title: "[R] Encoding error in R"
 date: 2021-03-30 21:06:12
 tags: hexo
 ---
