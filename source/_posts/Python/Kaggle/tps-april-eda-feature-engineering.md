@@ -19,7 +19,7 @@
 > [https://www.kaggle.com/demidova/titanic-eda-tutorial](https://www.kaggle.com/demidova/titanic-eda-tutorial)
 > [https://www.kaggle.com/demidova/titanic-logistic-regression-random-forest-xgboost?scriptVersionId=46567425]
 
-![titanic](https://ww.namu.la/s/1cc50931b5875401a9465ba06eaaf3d357ebfeabdf50346cd03636ab60ef0a9783a060b2c9cc7808148cd2a075699fa0f094e7f34df4a69fd5fdeb31137a37ef6e3a6c57a0b629606097a954052b7abba6a51a1a32ed5be9a92174b2ada23080602e6277fd7f0a200ddffcbd5b581746)
+![titanic](/hueman_images/python/kaggle/titanic.png)
 - [https://namu.wiki/jump/9AGb4mj%2Bgar2D116rRySHULPcuF9aQA9dU1%2FKaQlJabHnX1Bwo7dW3QKZZU5EDX7tyS7%2BeKInzFlBX0PyH2gvmr0xlEeT19AQhYRU4yv8erx25eqVyS5NlWU2pDAk3mhBaO4i%2BaABck5vAWwFaAE0g%3D%3D](https://namu.wiki/jump/9AGb4mj%2Bgar2D116rRySHULPcuF9aQA9dU1%2FKaQlJabHnX1Bwo7dW3QKZZU5EDX7tyS7%2BeKInzFlBX0PyH2gvmr0xlEeT19AQhYRU4yv8erx25eqVyS5NlWU2pDAk3mhBaO4i%2BaABck5vAWwFaAE0g%3D%3D)
 
 <a id='data_import'></a>
