@@ -4,6 +4,7 @@ date: 2021-05-13
 tags: python
 ---
 # 불균형 데이터(Imbalanced Data) 처리(2)
+![imbalanced data](hueman_images/python/ml/imbalanced_data.png)
 
 ## 2. 독립변수에 따른 불균형 데이터 
 > **High Cardinality에 대한 Encoding 방법**
