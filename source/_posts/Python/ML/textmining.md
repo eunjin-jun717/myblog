@@ -1,5 +1,5 @@
 ---
-title: "[ML]텍스트 마아닝"
+title: "[ML]텍스트 마이닝"
 date: 2021-04-20
 tags: ML
 ---
@@ -11,7 +11,7 @@ tags: ML
 - 이때, 반구조적 데이터란? 완전히 구조적이지도 않고 완전히 비구조적이지도 않은 데이터를 의미
 
 ### 2. 데이터 마이닝과 텍스트 마이닝의 비교
-!()[/hueman_images/python/ml/tm1.png]
+![text mining](/hueman_images/python/ml/tm1.png)
 
 ### 3. 텍스트 마이닝의 문제점
 - 자연어에 영향을 많이 받는다. 

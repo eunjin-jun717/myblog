@@ -1,3 +1,8 @@
+---
+title: "[Python] Kaggle TPS-Playground-April"
+date: 2021-04-26
+tags: python
+---
 - [First look](#first_look)
     - [(1) Check data for NA](#check_na)
     
