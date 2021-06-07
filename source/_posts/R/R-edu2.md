@@ -1,6 +1,6 @@
 ---
-title: [R] R코딩 기초함수
-date: 2021-03-23 22:53:23
+title: "[R] R코딩 기초함수"
+date: 2021-03-23
 tags: r
 ---
 ![](/hueman_images/sample2.png)

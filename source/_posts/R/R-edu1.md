@@ -1,6 +1,6 @@
 ---
-title: [R] R코딩 기초
-date: 2021-03-23 22:06:56
+title: "[R] R코딩 기초"
+date: 2021-03-23
 tags: r
 ---
 ![](/hueman_images/sample.png)
