@@ -56,7 +56,6 @@ YOLOv4 논문 리뷰를 하는데 필요한 용어들을 정리해보았습니�
 ## 2-3. object detection architecture
 ![](https://media.vlpt.us/images/hewas1230/post/b8355298-e489-4838-adb6-67f04d89c51a/image.png)
 1. Backbone
-- https://media.vlpt.us/images/hewas1230/post/b8355298-e489-4838-adb6-67f04d89c51a/image.png
 - 이것들은 ImageNet과 같은 ‘image classification datasets’에 pre-training된 모델이다. 
 - Detection dataset에 fine-tune된다. 
 - 깊어질수록 higher semantics와 함께 다양한 level의 feature를 생성하는 구조는 OD 네트워크의 후반부에 유용하다.
