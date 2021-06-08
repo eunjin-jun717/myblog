@@ -1,6 +1,6 @@
 # [HEXO] 블로그 꾸미기
 - 이전에 HEXO로 블로그 생성하는 법과 "Hueman" 테마 적용하는 글을 올렸었습니다. 아래의 링크 참고 부탁드립니다 🙏\
-👉  ![hexo blog 시작하기](https://eunjin-jun717.github.io/2021/03/22/R/firstday/)
+👉 [hexo blog 시작하기](https://eunjin-jun717.github.io/2021/03/22/R/firstday/)
 
 ## 1. 썸네일(Thumbnail)과 Theme color 변경
 ![](/hueman_images/hexo/thumbnail1.png)
