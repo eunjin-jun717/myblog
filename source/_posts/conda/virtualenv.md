@@ -1,6 +1,6 @@
 ---
 title: "[virtual enviroments] Anaconda 가상환경"
-date: 2021-06-09
+date: 2021-06-09 10:00:00
 tags: conda
 ---
 *references*
