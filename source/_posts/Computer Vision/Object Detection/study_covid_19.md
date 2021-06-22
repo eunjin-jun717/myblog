@@ -2,6 +2,9 @@
 title: "[DL] Kaggle COVID-19 Detection 대회 Study"
 date: 2021-06-15
 tags: DL
+categories:
+  - DL
+  - Study
 ---
 
 *references*
